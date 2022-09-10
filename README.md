@@ -210,6 +210,20 @@ Restart Supervisor and Launch Production Mode
 sudo supervisorctl restart all
 sudo bench setup production [frappe-user]
 
+Check supervisor status to verify that frappe/erpnext services are running.
+
+sudo supervisorctl status
+
+erpnext-redis:erpnext-redis-cache                RUNNING
+erpnext-redis:erpnext-redis-queue                RUNNING
+erpnext-redis:erpnext-redis-socketio             RUNNING
+erpnext-web:erpnext-frappe-web                   RUNNING
+erpnext-web:erpnext-node-socketio                RUNNING
+erpnext-workers:erpnext-frappe-default-worker-0  RUNNING
+erpnext-workers:erpnext-frappe-long-worker-0     RUNNING
+erpnext-workers:erpnext-frappe-schedule          RUNNING
+erpnext-workers:erpnext-frappe-short-worker-0    RUNNING
+
 If you are prompted to save the new/existing config file, respond with a Y.
 
 When this completes doing the settings, your instance is now on production mode and can be accessed using your IP, without needing to use the port.
@@ -217,3 +231,5 @@ When this completes doing the settings, your instance is now on production mode 
 This also will mean that your instance will start automatically even in the event you restart the server.
 
 See Version 14 release notes on this link.
+
+Source: https://codewithkarani.com/2022/08/18/install-erpnext-version-14/
