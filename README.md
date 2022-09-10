@@ -1,4 +1,8 @@
-In this article, I will take a step-by-step approach to configure our newly installed ubuntu 22.04 OS to set up an environment and install ERPNext version 14. Let’s get to work!
+In this article, I will take a step-by-step approach to configure our newly installed ubuntu 22.04 OS to set up an environment and install ERPNext version 14.
+![image](https://user-images.githubusercontent.com/1115854/189484699-c7b0268c-583d-40ff-90f2-3746f12ff90b.png)
+
+
+Let’s get to work!
 Prerequisites
 
 The below prerequisites are advised in order to get an optimal functionality of ERPNext on your server.
